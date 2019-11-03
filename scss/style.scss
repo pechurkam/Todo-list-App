@@ -1,5 +1,49 @@
-$color-text: red;
+
 
 body{
-  color: $color-text;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.section-content{
+  flex: 1 0 auto;
+  &-filter{
+    display: flex;
+    justify-content: space-around;
+  }
+}
+.section-footer{
+  margin-top: auto;
+  margin-bottom: 30px;
+}
+
+.modalCreate{
+  margin-right: 35%;
+  margin-left: 35%;
+  margin-top: 5%;
+
+
+  .modal-content{
+    padding: 20px;
+    border: 1px solid #000;
+    -webkit-border-radius: unset;
+    -moz-border-radius: unset;
+    border-radius: unset;
+    //height: 70%;
+    width: 30%;
+    form {
+
+      input[type=text], textarea {
+        width: 100%
+      }
+
+    }
+    .modalButtons{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+
 }

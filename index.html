@@ -4,24 +4,91 @@
     <meta charset="UTF-8">
     <title>Todo-list</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
 <!-- header -->
-<section class="section-header">
-    Header
-</section>
+<header class="section-header">
+    TODOList
+</header>
 <!-- / header -->
 
 <!-- content -->
 <section class="section-content">
-    Content
+    <div class="section-content-wrapper">
+        <div class="section-content-filter">
+            <div class="section-content-filter-search">
+                <form action="">
+                    <input type="text" placeholder="Search.." name="search">
+                </form>
+            </div>
+            <div class="section-content-filter-status">
+                <select>
+                    <option value="all">all</option>
+                    <option value="open">open</option>
+                    <option value="done">done</option>
+                </select>
+            </div>
+            <div class="section-content-filter-priority">
+                <select>
+                    <option value="all">all</option>
+                    <option value="high">high</option>
+                    <option value="normal">normal</option>
+                    <option value="low">low</option>
+                </select>
+            </div>
+            <div class="section-content-filter-button">
+                <button id="btnCreate">Create</button>
+            </div>
+        </div>
+        <div class="section-content-tasks">
+
+        </div>
+    </div>
 </section>
 <!-- / content -->
 
 <!-- footer -->
-<section class="section-footer">
-    Footer
-</section>
+<footer class="section-footer">
+    Milena Pechura
+</footer>
 <!-- / footer -->
+
+<!-- Modals -->
+<div id="modalCreateTask" class="modal modalCreate">
+    <div class="modal-content">
+        <form action="">
+            <label for="title">Title</label>
+            <input class="d-none d-md-block d-lg-none d-xl-block" type="text" id="title" name="title" placeholder="Title">
+            <label for="description">Description</label>
+            <textarea class="d-none d-md-block d-lg-none d-xl-block" id="description" name="description" placeholder="Description"></textarea>
+
+            <label for="priority">Priority</label><br>
+            <select id="priority" name="priority">
+                <option value="" selected="selected">High</option>
+                <option value="">High</option>
+                <option value="">Normal</option>
+                <option value="">Low</option>
+            </select>
+            <br><br>
+            <div class="modalButtons">
+                <button id="btnCancel">Cancel</button>
+                <input type="submit" value="Save"></div>
+        </form>
+    </div>
+<!-- / Modals -->
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+
 </body>
 </html>

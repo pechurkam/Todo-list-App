@@ -1,0 +1,32 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
+
+.section-content {
+  flex: 1 0 auto; }
+  .section-content-filter {
+    display: flex;
+    justify-content: space-around; }
+
+.section-footer {
+  margin-top: auto;
+  margin-bottom: 30px; }
+
+.modalCreate {
+  margin-right: 35%;
+  margin-left: 35%;
+  margin-top: 5%; }
+  .modalCreate .modal-content {
+    padding: 20px;
+    border: 1px solid #000;
+    -webkit-border-radius: unset;
+    -moz-border-radius: unset;
+    border-radius: unset;
+    width: 30%; }
+    .modalCreate .modal-content form input[type=text], .modalCreate .modal-content form textarea {
+      width: 100%; }
+    .modalCreate .modal-content .modalButtons {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; }
