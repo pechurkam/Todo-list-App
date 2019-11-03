@@ -42,8 +42,17 @@
                 <button id="btnCreate">Create</button>
             </div>
         </div>
-        <div class="section-content-tasks">
+        <div id="tasks" class="section-content-tasks">
 
+            <!--<div class="task">-->
+                <!--<div class="task-title"></div>-->
+                <!--<div class="task-desc"></div>-->
+                <!--<div class="task-priority"></div>-->
+                <!--<div class="task-state"></div>-->
+            <!--</div>-->
+            <!--<div class="task">Task 1</div>-->
+            <!--<div class="task">Task 1</div>-->
+            <!--<div class="task">Task 1</div>-->
         </div>
     </div>
 </section>
@@ -66,15 +75,14 @@
 
             <label for="priority">Priority</label><br>
             <select id="priority" name="priority">
-                <option value="" selected="selected">High</option>
-                <option value="">High</option>
-                <option value="">Normal</option>
-                <option value="">Low</option>
+
+                <option value="high">High</option>
+                <option value="normal">Normal</option>
+                <option value="low">Low</option>
             </select>
             <br><br>
-            <div class="modalButtons">
                 <button id="btnCancel">Cancel</button>
-                <input type="submit" value="Save"></div>
+                <input type="submit" value="Save" id="submit">
         </form>
     </div>
 <!-- / Modals -->

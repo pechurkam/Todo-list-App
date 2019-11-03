@@ -8,9 +8,19 @@ body{
 
 .section-content{
   flex: 1 0 auto;
+  width: 90%;
+  padding-left: 10%;
   &-filter{
     display: flex;
     justify-content: space-around;
+  }
+  &-tasks{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .task{
+      flex-basis: 30%;
+    }
   }
 }
 .section-footer{
@@ -33,17 +43,11 @@ body{
     //height: 70%;
     width: 30%;
     form {
-
       input[type=text], textarea {
         width: 100%
       }
+    }
 
-    }
-    .modalButtons{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-    }
   }
 
 }
